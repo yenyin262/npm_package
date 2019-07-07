@@ -1,0 +1,36 @@
+{
+  "name": "npm_by_ying",
+  "version": "1.0.2",
+  "description": "learning how to build npm package",
+  "main": "dist/index.js",
+  "module":"dist/index.js", 
+  "files":  [
+    "dist", 
+    "README.md"],
+  
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist && NODE_ENV=production babel src --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__"
+
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yenyin262/npm_package.git"
+  },
+  "author": "hing yen yin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yenyin262/npm_package/issues"
+  },
+  "homepage": "https://github.com/yenyin262/npm_package#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-react-app": "^9.0.0",
+    "react": "^16.8.6",
+    "react-do": "^1.1.6",
+    "react-scripts": "^3.0.1",
+    "rimraf": "^2.6.3"
+  }
+}

@@ -1,0 +1,5 @@
+{ 
+    "presets": ["react"] 
+    //compiler - using react - want to compile react manner 
+    // react file - read react manner and build in js file
+}
